@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.hi{
+
+    border: 2px solid black;
+    display: inline-block;
+    background-color: aqua;
+    position: relative;
+    left: 25%;
+    padding-top: 40%;
+    padding: 25px;
+    margin: 30px;
+    font-size: 200%;
+}
+
+img{
+
+    width: 700px;
+    margin-top: 10%;
+    
+}
+
+.smiley{
+
+    margin-left: 30%;
+    transition: 1s ease;
+
+}
+.hello1:hover~ .smiley img{
+
+    transform:translate(100px,50px);
+}
+
+
+.hello2:hover~ .smiley img{
+
+ transform: scale(0.5);
+}
+
+
+.hello3:hover~ .smiley img{
+
+transform: rotate(180deg);
+}
+
+
+.hello4:hover~ .smiley img{
+
+ transform: skew(50deg);
+    
+}
+
+.switch{ 
+
+    border: 2px solid black;
+    border-radius: 100%;
+    display: inline-block;
+    background-color: goldenrod;
+    position: relative;
+    left: 30%;
+    padding-top: 40%;
+    padding: 25px;
+    margin: 40px;
+    font-size: 200%;
+}
+
+.fan {
+width: 300px;
+height: 300px;
+transform: rotate(360deg);
+position: absolute;
+left: 40%;
+transition: transform 1s linear;
+mix-blend-mode: multiply;
+}
+
+@keyframes rotator {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+   
+.switch1:hover~ .image .fan{
+    animation: rotator 1s infinite linear;
+}
+.switch2:hover~ .image .fan {
+
+    animation: rotator 0.8s infinite linear;
+
+}
+.switch3:hover~ .image .fan {
+    
+    animation: rotator 0.6s infinite linear;
+}
+.switch4:hover~ .image .fan{
+    animation: rotator 0.4s infinite linear;
+}
+
+h1{
+    padding-top: 3%;
+    background-color: gray;
+    text-align: center;
+    padding-bottom: 3%;
+}
+
